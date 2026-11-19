@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Directory - PSU Gate Security</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="topbar-brand">PSU Gate Barcode Checker</span>
+    <nav class="topbar-nav">
+      <a href="list.html">Users</a>
+      <a href="form.html">Add User</a>
+    </nav>
+  </header>
+
+  <main class="panel">
+    <div class="panel-header">
+      <h1>User Directory</h1>
+      <a href="form.html" class="btn btn-primary">+ Add User</a>
+    </div>
+
+    <div class="search-bar">
+      <label for="search-user" style="position: absolute; left: -9999px;">Search by barcode or name</label>
+      <input id="search-user" type="search" placeholder="Search barcode or full name...">
+      <button type="button" class="btn btn-outline">Search</button>
+    </div>
+
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Barcode</th>
+            <th>Full Name</th>
+            <th>Course</th>
+            <th>Contact</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>202410472</td>
+            <td>Maria Santos</td>
+            <td>BS Information Technology</td>
+            <td>09171234567</td>
+            <td><span class="pill pill-active">Active</span></td>
+            <td>
+              <a href="form.html?id=1" class="action-link action-edit">Edit</a>
+              <a href="#" class="action-link action-delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>202410519</td>
+            <td>Juan Dela Cruz</td>
+            <td>BS Computer Science</td>
+            <td>09221234567</td>
+            <td><span class="pill pill-active">Active</span></td>
+            <td>
+              <a href="form.html?id=2" class="action-link action-edit">Edit</a>
+              <a href="#" class="action-link action-delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>202310894</td>
+            <td>Ana Reyes</td>
+            <td>BS Criminology</td>
+            <td>09331234567</td>
+            <td><span class="pill pill-active">Active</span></td>
+            <td>
+              <a href="form.html?id=3" class="action-link action-edit">Edit</a>
+              <a href="#" class="action-link action-delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>202510112</td>
+            <td>Pedro Gomez</td>
+            <td>BS Accountancy</td>
+            <td>09441234567</td>
+            <td><span class="pill pill-suspended">Suspended</span></td>
+            <td>
+              <a href="form.html?id=4" class="action-link action-edit">Edit</a>
+              <a href="#" class="action-link action-delete">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>202210099</td>
+            <td>Liza Navarro</td>
+            <td>BS Education</td>
+            <td>09551234567</td>
+            <td><span class="pill pill-inactive">Inactive</span></td>
+            <td>
+              <a href="form.html?id=5" class="action-link action-edit">Edit</a>
+              <a href="#" class="action-link action-delete">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
