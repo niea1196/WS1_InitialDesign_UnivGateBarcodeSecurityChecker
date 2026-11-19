@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add User - PSU Gate Security</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="topbar-brand">PSU Gate Barcode Checker</span>
+    <nav class="topbar-nav">
+      <a href="list.html">Users</a>
+      <a href="form.html">Add User</a>
+    </nav>
+  </header>
+
+  <main class="panel">
+    <div class="panel-header">
+      <h1>Add User</h1>
+    </div>
+
+    <form action="#" method="post" class="user-form">
+      <div class="form-item">
+        <label for="Barcode">Barcode *</label>
+        <input id="Barcode" name="Barcode" type="text" maxlength="32" required placeholder="e.g., 202410472">
+      </div>
+
+      <div class="form-item">
+        <label for="User_Name">Full Name *</label>
+        <input id="User_Name" name="User_Name" type="text" maxlength="120" required placeholder="e.g., Maria Santos">
+      </div>
+
+      <div class="form-item">
+        <label for="User_Course">Course *</label>
+        <input id="User_Course" name="User_Course" type="text" maxlength="120" required placeholder="e.g., BS Information Technology">
+      </div>
+
+      <div class="form-item">
+        <label for="Contact_Number">Contact Number *</label>
+        <input id="Contact_Number" name="Contact_Number" type="tel" maxlength="20" required placeholder="e.g., 09171234567">
+      </div>
+
+      <div class="form-item">
+        <label for="User_Status">Status *</label>
+        <select id="User_Status" name="User_Status" required>
+          <option value="Active" selected>Active</option>
+          <option value="Inactive">Inactive</option>
+          <option value="Suspended">Suspended</option>
+        </select>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="list.html" class="btn btn-outline">Cancel</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
